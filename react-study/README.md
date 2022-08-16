@@ -15,19 +15,21 @@
 const root = ReactDOM.createRoot(document.getElementById('root'));
 ```
 会进到 react/packages/react-dom/client.js 文件中
+<table><tr><td bgcolor=white>
 ```
-createRoot(container, options) {
-    if (__DEV__) {
-    Internals.usingClientEntryPoint = true;
-  }
-  try {
-    return createRootImpl(container, options);
-  } finally {
-    if (__DEV__) {
-      Internals.usingClientEntryPoint = false;
+    createRoot(container, options) {
+        if (__DEV__) {
+        Internals.usingClientEntryPoint = true;
     }
-  }
-}
+    try {
+        return createRootImpl(container, options);
+    } finally {
+        if (__DEV__) {
+        Internals.usingClientEntryPoint = false;
+        }
+    }
+    }
 ```
+</td></tr></table>
 走到if(__DEV__)里面，把Internals.usingClientEntryPoint设置为true;
 
