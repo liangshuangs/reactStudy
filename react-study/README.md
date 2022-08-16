@@ -8,7 +8,7 @@
 - npm run eject
 
 ### 如何调试源码
-![https://juejin.cn/post/7100212277911453733] 调试源码教程
+https://juejin.cn/post/7100212277911453733 调试源码教程
 
 ### 源码分析
 ```
